@@ -9,9 +9,10 @@ La version anglaise se trouve dans le dépôt [The-evangelist-complete-toolkit-]
 | Chemin | Contenu |
 | --- | --- |
 | `index.html` | Toute la page (textes, styles et icônes) |
-| `images/` | Les affiches en AVIF, WebP et JPEG à plusieurs tailles, et `share-image.jpg` pour les aperçus de lien |
+| `images/` | Les affiches en français, en AVIF, WebP et JPEG à plusieurs tailles, et `share-image.jpg` pour les aperçus de lien |
 | `fonts/montserrat-800.woff2` | Police des titres (Montserrat ExtraBold, caractères latins et français), avec sa licence `OFL.txt` |
 | `.htaccess` | Réglages pour Hostinger : types de fichiers, compression et cache |
+| `deploy/outil-complet-de-l-evangeliste-site.zip` | Les fichiers du site ci-dessus en un seul zip, utilisé pour le déploiement sur Hostinger |
 
 ## Liens utilisés
 
@@ -22,12 +23,24 @@ La version anglaise se trouve dans le dépôt [The-evangelist-complete-toolkit-]
 ## À modifier dans `index.html`
 
 - **Prix (facultatif) :** cherchez `PRIX (facultatif)`. Écrivez votre prix et supprimez le mot `hidden`. Sinon, la page indique que le prix s’affiche sur la page de paiement.
-- **Adresse de la page :** une fois la page en ligne, remplacez `images/share-image.jpg` dans la ligne `og:image` par l’adresse complète, et ajoutez `og:url` et un lien `canonical`, pour que les aperçus WhatsApp et Facebook fonctionnent.
-- **Affiches :** les affiches sont celles de la version anglaise (textes en anglais). Pour utiliser des affiches en français, remplacez les fichiers de `images/` en gardant les mêmes noms et un format carré.
+- **Adresse de la page :** si la page change d’adresse, mettez à jour `og:url`, `og:image` et le lien `canonical` en haut du fichier, pour que les aperçus WhatsApp et Facebook continuent de fonctionner.
+- **Affiches :** pour changer une affiche, remplacez ses fichiers dans `images/` en gardant les mêmes noms, les mêmes tailles et un format carré.
 
-## Mettre la page en ligne
+## Où la page est en ligne
 
-Envoyez `index.html`, `.htaccess` et les dossiers `images` et `fonts` sur l’hébergement, en gardant la même structure. Sur Hostinger, créez de préférence un site séparé pour le sous-domaine (comme pour la version anglaise), afin qu’il ne dépende pas de l’application Node.js de `bookline.digital`.
+**https://outil-complet-de-l-evangeliste.bookline.digital**, sur Hostinger (compte `u977986808`) :
+
+- C’est un site à part sur l’hébergement, séparé de l’application Node.js de `bookline.digital`.
+- DNS : un enregistrement `A` `outil-complet-de-l-evangeliste` → `92.113.24.54` dans la zone `bookline.digital`.
+- SSL actif, avec redirection automatique vers HTTPS.
+
+## Mettre à jour la page en ligne
+
+1. Modifiez les fichiers, reconstruisez `deploy/outil-complet-de-l-evangeliste-site.zip` avec `index.html`, `.htaccess`, `images/` et `fonts/` à la racine du zip, puis poussez sur `main`.
+2. Sur Hostinger, récupérez ce dépôt dans un dossier temporaire `_deploy` du site (déploiement Git).
+3. Déployez `_deploy/deploy/outil-complet-de-l-evangeliste-site.zip` comme archive de site statique. Les fichiers du site sont remplacés par ceux du zip, et `_deploy` est supprimé.
+
+À la main, vous pouvez aussi envoyer le zip dans le `public_html` du site avec le Gestionnaire de fichiers, puis utiliser **Extraire** en remplaçant les anciens fichiers.
 
 ## Crédits
 
