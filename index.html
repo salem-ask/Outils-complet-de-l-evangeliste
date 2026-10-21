@@ -1,0 +1,974 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>L’Outil complet de l’évangéliste</title>
+<meta name="description" content="Une formation pratique et des ressources prêtes à l’emploi pour prêcher l’Évangile, gagner des âmes et faire avancer le Royaume de Dieu. 5 domaines de formation et un kit bonus d’évangélisation numérique. Accès immédiat, PDF pour téléphone ou ordinateur.">
+<meta name="theme-color" content="#0a1730">
+<meta name="color-scheme" content="light dark">
+
+<!-- Aperçus de lien sur WhatsApp et Facebook.
+     Quand la page sera en ligne, remplacez « images/share-image.jpg » ci-dessous par l’adresse complète
+     (par exemple https://votre-domaine.com/images/share-image.jpg), et ajoutez og:url et un lien canonical. -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="L’Outil complet de l’évangéliste">
+<meta property="og:description" content="Une formation pratique et des ressources prêtes à l’emploi pour prêcher l’Évangile, gagner des âmes et faire avancer le Royaume de Dieu. Accès immédiat, format PDF.">
+<meta property="og:image" content="images/share-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="L’Outil complet de l’évangéliste : le livre et ses cinq domaines de formation">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a1730'/%3E%3Cpath d='M32 12v40M20 25h24' stroke='%23ecc96a' stroke-width='7' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preload" as="image" href="images/toolkit-poster-720.avif" type="image/avif" fetchpriority="high"
+      imagesrcset="images/toolkit-poster-480.avif 480w, images/toolkit-poster-720.avif 720w, images/toolkit-poster-960.avif 960w"
+      imagesizes="(min-width: 960px) 500px, (min-width: 592px) 560px, calc(100vw - 32px)">
+<link rel="preload" href="fonts/montserrat-800.woff2" as="font" type="font/woff2" crossorigin>
+
+<style>
+/* Layout: one long sales page in a single 1120px column. Midnight-blue bands (header, offer, final call)
+   frame bright reading sections; gold is kept for buttons, numbering and Scripture. */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-display: optional;
+  src: url("fonts/montserrat-800.woff2") format("woff2");
+}
+
+:root {
+  /* Brand colours from the poster (identical in both themes) */
+  --navy: #0a1730;
+  --gold-grad: linear-gradient(180deg, #f8de8a 0%, #ebc35d 48%, #d6a13a 100%);
+  --gold-text: linear-gradient(180deg, #fbe6a0 0%, #efc75f 48%, #cf9529 100%);
+  --badge-gold: linear-gradient(180deg, #9c6310 0%, #6e4207 100%);
+  --badge-navy: linear-gradient(180deg, #17386b 0%, #081a36 100%);
+  --btn-hi: rgba(255, 255, 255, .55);
+  --btn-glow: rgba(214, 161, 58, .55);
+  --badge-ink: #ffffff;
+
+  /* Light theme */
+  --bg: #ffffff;
+  --bg-alt: #f7f4ec;
+  --surface: #ffffff;
+  --tint: #eef2f9;
+  --ink: #0b1630;
+  --ink-soft: #4a5571;
+  --line: #e5dccb;
+  --accent-ink: #8a5a0b;
+  --band: #0a1730;
+  --band-deep: #060f22;
+  --band-2: #12244a;
+  --band-line: rgba(236, 201, 106, .32);
+  --on-band: #f5f7fc;
+  --on-band-soft: #c5cde1;
+  --on-band-gold: #ecc96a;
+  --chip-bg: rgba(255, 255, 255, .05);
+  --glow: rgba(240, 196, 92, .14);
+  --glow-blue: rgba(46, 88, 160, .38);
+  --shadow-card: 0 1px 2px rgba(10, 23, 48, .06), 0 16px 36px -20px rgba(10, 23, 48, .3);
+  --shadow-poster: 0 34px 60px -28px rgba(0, 0, 0, .75);
+  --focus: #0a1730;
+
+  /* Type */
+  --font-display: "Montserrat", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  --font-scripture: Georgia, "Noto Serif", "Times New Roman", serif;
+
+  /* Context colours, switched inside the dark bands */
+  --heading: var(--ink);
+  --text-soft: var(--ink-soft);
+  --eyebrow: var(--accent-ink);
+  --icon-accent: var(--accent-ink);
+
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #08111f;
+    --bg-alt: #0b1629;
+    --surface: #0f1d36;
+    --tint: #16294b;
+    --ink: #edf1f8;
+    --ink-soft: #b2bccf;
+    --line: #22355a;
+    --accent-ink: #ecc96a;
+    --band: #0c1b38;
+    --band-deep: #050b17;
+    --band-2: #132a52;
+    --glow: rgba(240, 196, 92, .12);
+    --badge-navy: linear-gradient(180deg, #2b5296 0%, #163262 100%);
+    --shadow-card: 0 1px 2px rgba(0, 0, 0, .4), 0 16px 36px -20px rgba(0, 0, 0, .75);
+    --focus: #ecc96a;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #08111f;
+  --bg-alt: #0b1629;
+  --surface: #0f1d36;
+  --tint: #16294b;
+  --ink: #edf1f8;
+  --ink-soft: #b2bccf;
+  --line: #22355a;
+  --accent-ink: #ecc96a;
+  --band: #0c1b38;
+  --band-deep: #050b17;
+  --band-2: #132a52;
+  --glow: rgba(240, 196, 92, .12);
+  --badge-navy: linear-gradient(180deg, #2b5296 0%, #163262 100%);
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, .4), 0 16px 36px -20px rgba(0, 0, 0, .75);
+  --focus: #ecc96a;
+  color-scheme: dark;
+}
+
+/* ---------- Base ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+img, svg, picture { display: block; }
+img { max-width: 100%; height: auto; }
+h1, h2, h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -.015em;
+  color: var(--heading);
+  text-wrap: balance;
+}
+p, ul, ol, figure, blockquote { margin: 0; }
+p { text-wrap: pretty; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+.icon {
+  width: 1em; height: 1em; flex: none;
+  fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+}
+
+/* ---------- Layout ---------- */
+.wrap {
+  max-width: 1120px;
+  margin-inline: auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+@media (min-width: 640px) {
+  .wrap {
+    padding-left: max(24px, env(safe-area-inset-left, 0px));
+    padding-right: max(24px, env(safe-area-inset-right, 0px));
+  }
+}
+.section { padding-block: clamp(56px, 10vw, 104px); }
+.section--alt { background: var(--bg-alt); }
+.band {
+  background: var(--band);
+  color: var(--on-band);
+  --heading: var(--on-band);
+  --text-soft: var(--on-band-soft);
+  --eyebrow: var(--on-band-gold);
+  --icon-accent: var(--on-band-gold);
+  --focus: var(--on-band-gold);
+}
+.section-head {
+  display: grid;
+  gap: 14px;
+  max-width: 44rem;
+  margin-bottom: clamp(32px, 6vw, 52px);
+}
+.section-head--center { margin-inline: auto; text-align: center; justify-items: center; }
+.eyebrow {
+  font: 800 .78rem/1.3 var(--font-display);
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--eyebrow);
+}
+h2 { font-size: clamp(1.75rem, 1.25rem + 2.2vw, 2.6rem); }
+.lead { font-size: clamp(1.0625rem, 1rem + .4vw, 1.25rem); color: var(--text-soft); }
+
+/* Gold rule with a diamond, as on the poster */
+.divider {
+  display: flex; align-items: center; gap: 10px;
+  width: 180px; max-width: 60%;
+  color: var(--icon-accent);
+}
+.divider::before, .divider::after { content: ""; flex: 1; height: 1px; }
+.divider::before { background: linear-gradient(90deg, transparent, currentColor); }
+.divider::after { background: linear-gradient(90deg, currentColor, transparent); }
+.divider i { width: 7px; height: 7px; flex: none; background: currentColor; transform: rotate(45deg); }
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  width: 100%; max-width: 26rem; min-height: 58px;
+  padding: 14px 24px;
+  border-radius: 14px;
+  font: 800 1.0625rem/1.2 var(--font-display);
+  letter-spacing: .01em;
+  text-align: center;
+  text-decoration: none;
+  color: var(--navy);
+  background: var(--gold-grad);
+  box-shadow: inset 0 1px 0 var(--btn-hi), 0 14px 28px -14px var(--btn-glow);
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  transition: transform .15s ease, filter .15s ease;
+}
+.btn .icon { font-size: 1.25rem; stroke-width: 2.5; transition: transform .15s ease; }
+.btn:active { transform: translateY(1px); }
+@media (hover: hover) {
+  .btn:hover { filter: brightness(1.05) saturate(1.05); }
+  .btn:hover .icon { transform: translateX(3px); }
+}
+
+.cta-block { display: grid; gap: 14px; justify-items: center; text-align: center; }
+.cta-block__title { font: 800 clamp(1.15rem, 1rem + .7vw, 1.4rem)/1.3 var(--font-display); color: var(--heading); text-wrap: balance; }
+.facts {
+  list-style: none; padding: 0;
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 18px;
+  font-size: .9375rem; line-height: 1.4;
+  color: var(--text-soft);
+}
+.facts li { display: inline-flex; align-items: center; gap: 7px; }
+.facts .icon { font-size: 1.05rem; color: var(--icon-accent); }
+
+/* ---------- 1. Header ---------- */
+.hero {
+  background:
+    radial-gradient(110% 60% at 100% 0%, var(--glow), transparent 62%),
+    radial-gradient(80% 50% at 0% 100%, var(--glow-blue), transparent 70%),
+    var(--band);
+  padding-block: clamp(32px, 7vw, 80px) clamp(48px, 9vw, 96px);
+  overflow: hidden;
+}
+.hero__grid { display: grid; gap: 28px; justify-items: center; text-align: center; }
+.hero__intro { display: grid; gap: 16px; justify-items: center; max-width: 40rem; }
+.hero h1 { font-size: clamp(2rem, 1.2rem + 3.6vw, 3.4rem); line-height: 1.08; }
+.hero h1 span { display: block; color: var(--on-band-gold); }
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  .hero h1 span {
+    background: var(--gold-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+@media (forced-colors: active) {
+  .hero h1 span { background: none; -webkit-text-fill-color: currentColor; }
+}
+.hero__promise { font-size: clamp(1.0625rem, 1rem + .45vw, 1.25rem); color: var(--on-band-soft); max-width: 34rem; }
+.hero__poster { width: 100%; max-width: 560px; }
+.hero__poster img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 18px;
+  background: var(--band-2);
+  box-shadow: 0 0 0 1px var(--band-line), var(--shadow-poster);
+}
+.hero__cta { display: grid; gap: 14px; justify-items: center; width: 100%; }
+@media (min-width: 960px) {
+  .hero__grid {
+    grid-template-columns: minmax(0, 1fr) 500px;
+    grid-template-rows: 1fr auto auto 1fr;
+    grid-template-areas: ". poster" "intro poster" "cta poster" ". poster";
+    column-gap: 56px;
+    row-gap: 32px;
+    justify-items: start;
+    text-align: left;
+  }
+  .hero__intro { grid-area: intro; justify-items: start; }
+  .hero__poster { grid-area: poster; }
+  .hero__cta { grid-area: cta; justify-items: start; }
+  .hero .facts { justify-content: flex-start; }
+}
+
+/* ---------- 2. Problem ---------- */
+.struggles { list-style: none; padding: 0; display: grid; gap: 28px; }
+@media (min-width: 760px) {
+  .struggles { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px 48px; }
+}
+.struggle {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  align-content: start;
+  gap: 6px 16px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+.struggle__icon {
+  grid-row: span 2;
+  width: 48px; height: 48px;
+  display: grid; place-items: center;
+  border-radius: 14px;
+  background: var(--tint);
+  color: var(--ink);
+}
+.struggle__icon .icon { font-size: 24px; }
+.struggle h3 { font-size: 1.1875rem; padding-top: 2px; }
+.struggle p { color: var(--ink-soft); }
+.bridge {
+  margin-top: clamp(40px, 7vw, 60px);
+  max-width: 42rem;
+  font: 800 clamp(1.15rem, 1rem + .8vw, 1.4rem)/1.45 var(--font-display);
+  color: var(--heading);
+  text-wrap: balance;
+}
+.bridge em { font-style: normal; color: var(--accent-ink); }
+
+/* ---------- 3. Solution ---------- */
+.solution__inner { display: grid; justify-items: center; gap: 20px; max-width: 52rem; text-align: center; }
+.solution__statement { font-size: clamp(1.2rem, 1.05rem + .9vw, 1.55rem); line-height: 1.5; color: var(--ink); }
+.solution__statement strong { font-family: var(--font-display); font-weight: 800; }
+.pack-facts { list-style: none; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.pack-facts li {
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  font-size: .9375rem; line-height: 1.4;
+  color: var(--ink-soft);
+}
+.pack-facts strong { font-family: var(--font-display); color: var(--ink); }
+.verse-line { font: italic 1.0625rem/1.5 var(--font-scripture); color: var(--accent-ink); }
+.verse-line cite {
+  display: block;
+  margin-top: 4px;
+  font: normal 800 .75rem/1.3 var(--font-display);
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+/* ---------- 4. Content ---------- */
+.domains { list-style: none; padding: 0; display: grid; gap: 20px; }
+@media (min-width: 640px) { .domains { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1024px) { .domains { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; } }
+.domain {
+  display: flex; flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--surface);
+  box-shadow: var(--shadow-card);
+}
+.domain__media img { width: 100%; aspect-ratio: 1 / 1; background: var(--band-2); }
+.domain__body { display: grid; gap: 10px; align-content: start; padding: 0 20px 24px; }
+.domain__num {
+  position: relative; z-index: 1;
+  justify-self: start;
+  display: inline-flex; align-items: center;
+  height: 42px;
+  margin-top: -21px;
+  padding: 0 24px 0 16px;
+  font: 800 1.25rem/1 var(--font-display);
+  letter-spacing: .02em;
+  color: var(--badge-ink);
+  background: var(--badge-gold);
+  clip-path: polygon(8px 0, calc(100% - 14px) 0, 100% 50%, calc(100% - 14px) 100%, 8px 100%, 0 calc(100% - 8px), 0 8px);
+}
+.domain__num--navy { background: var(--badge-navy); }
+.domain__num--bonus { font-size: .875rem; letter-spacing: .16em; text-transform: uppercase; }
+.domain__body h3 { font-size: 1.1875rem; }
+.domain__body p { color: var(--ink-soft); font-size: 1rem; }
+
+.bonus-visual {
+  aspect-ratio: 1 / 1;
+  display: grid; place-content: center; justify-items: center; gap: 14px;
+  padding: 24px;
+  text-align: center;
+  background:
+    radial-gradient(45% 35% at 50% 30%, var(--glow), transparent 75%),
+    radial-gradient(80% 65% at 50% 30%, var(--glow-blue), transparent 72%),
+    var(--band);
+  color: var(--on-band);
+}
+.bonus-visual .icon { font-size: 48px; stroke-width: 1.5; color: var(--on-band-gold); }
+.bonus-visual__title { font: 800 clamp(1.25rem, 1.1rem + .8vw, 1.55rem)/1.15 var(--font-display); color: var(--on-band-gold); }
+.bonus-visual__chips { list-style: none; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; max-width: 18rem; }
+.bonus-visual__chips li {
+  padding: 6px 10px;
+  border: 1px solid var(--band-line);
+  border-radius: 999px;
+  background: var(--chip-bg);
+  font-size: .8125rem; line-height: 1.2;
+  color: var(--on-band);
+}
+.after-content { margin-top: clamp(40px, 7vw, 64px); }
+
+/* ---------- 5. Results ---------- */
+.results { list-style: none; padding: 0; display: grid; gap: 24px; }
+@media (min-width: 680px) { .results { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px 40px; } }
+@media (min-width: 1024px) { .results { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.result { display: grid; grid-template-columns: 36px minmax(0, 1fr); align-content: start; gap: 4px 14px; }
+.result__check {
+  grid-row: span 2;
+  width: 36px; height: 36px;
+  display: grid; place-items: center;
+  border-radius: 50%;
+  background: var(--gold-grad);
+  color: var(--navy);
+}
+.result__check .icon { font-size: 20px; stroke-width: 3; }
+.result h3 { font-size: 1.125rem; padding-top: 6px; }
+.result p { color: var(--ink-soft); }
+
+/* ---------- 6. Audience ---------- */
+.audience { list-style: none; padding: 0; display: grid; gap: 14px; }
+@media (min-width: 640px) { .audience { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1024px) { .audience { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; } }
+.who {
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr);
+  align-content: start;
+  gap: 4px 16px;
+  padding: 20px;
+  border-radius: 16px;
+  background: var(--bg-alt);
+}
+.who__icon {
+  grid-row: span 2;
+  width: 52px; height: 52px;
+  display: grid; place-items: center;
+  border-radius: 50%;
+  background: var(--surface);
+  box-shadow: inset 0 0 0 1px var(--line);
+  color: var(--accent-ink);
+}
+.who__icon .icon { font-size: 24px; }
+.who h3 { font-size: 1.125rem; padding-top: 4px; }
+.who p { color: var(--ink-soft); font-size: 1rem; }
+.audience-note { margin-top: 28px; text-align: center; color: var(--ink-soft); }
+.audience-note strong { color: var(--ink); }
+
+/* ---------- 7. Offer ---------- */
+.offer,
+.final {
+  background:
+    radial-gradient(45% 30% at 50% 0%, var(--glow), transparent 75%),
+    radial-gradient(80% 55% at 50% 0%, var(--glow-blue), transparent 72%),
+    var(--band);
+}
+.offer-card {
+  max-width: 40rem;
+  margin-inline: auto;
+  display: grid; justify-items: center; gap: 24px;
+  padding: clamp(28px, 6vw, 48px) clamp(20px, 5vw, 48px);
+  border: 1px solid var(--band-line);
+  border-radius: 24px;
+  background: var(--band-2);
+  box-shadow: var(--shadow-poster);
+  text-align: center;
+}
+.offer-list { list-style: none; padding: 0; display: grid; gap: 14px; width: 100%; text-align: left; }
+.offer-list li { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 12px; align-items: start; color: var(--on-band); }
+.offer-list .result__check { width: 28px; height: 28px; margin-top: 1px; }
+.offer-list .result__check .icon { font-size: 16px; }
+.offer-list strong { color: var(--on-band-gold); }
+.offer-price { font: 800 clamp(2rem, 1.6rem + 2vw, 2.75rem)/1.1 var(--font-display); color: var(--on-band-gold); }
+.offer-note { font-size: .9375rem; color: var(--on-band-soft); max-width: 30rem; }
+
+/* ---------- 8. FAQ ---------- */
+.faq { display: grid; gap: 12px; max-width: 48rem; }
+.faq details {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+}
+.faq summary {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  min-height: 60px;
+  padding: 16px 18px 16px 20px;
+  list-style: none;
+  cursor: pointer;
+  font: 800 1.0625rem/1.35 var(--font-display);
+  color: var(--heading);
+  -webkit-tap-highlight-color: transparent;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary:focus-visible { border-radius: 14px; }
+.faq__toggle {
+  width: 30px; height: 30px; flex: none;
+  display: grid; place-items: center;
+  border-radius: 50%;
+  background: var(--tint);
+  color: var(--accent-ink);
+  transition: transform .2s ease;
+}
+.faq__toggle .icon { font-size: 18px; stroke-width: 2.5; }
+.faq details[open] .faq__toggle { transform: rotate(45deg); }
+.faq__answer { padding: 0 20px 20px; color: var(--ink-soft); }
+.faq__answer a { color: var(--accent-ink); font-weight: 700; }
+
+/* ---------- 9. Final call ---------- */
+.final__inner { display: grid; justify-items: center; gap: 20px; max-width: 46rem; text-align: center; }
+.verse { display: grid; gap: 10px; }
+.verse blockquote { font: italic 400 clamp(1.2rem, 1rem + .9vw, 1.55rem)/1.45 var(--font-scripture); color: var(--on-band-gold); }
+.verse figcaption {
+  font: 800 .75rem/1.3 var(--font-display);
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--on-band-soft);
+}
+.final .cta-block { width: 100%; margin-top: 8px; }
+
+/* ---------- 10. Footer ---------- */
+.footer {
+  background: var(--band-deep);
+  color: var(--on-band-soft);
+  --focus: var(--on-band-gold);
+  padding-block: 40px calc(40px + env(safe-area-inset-bottom, 0px));
+  font-size: .9375rem;
+}
+.footer__inner { display: grid; justify-items: center; gap: 12px; text-align: center; }
+.footer__brand { font: 800 1.0625rem/1.3 var(--font-display); color: var(--on-band); }
+.footer__links { display: flex; flex-wrap: wrap; justify-content: center; gap: 0 24px; }
+.footer__links a,
+.footer__site a { display: inline-block; padding: 10px 2px; color: var(--on-band-gold); text-underline-offset: 3px; }
+.footer__site a { font-weight: 700; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
+</style>
+
+<body>
+
+<!-- ============ 1. EN-TÊTE ============ -->
+<header class="hero band" id="top">
+  <div class="wrap hero__grid">
+    <div class="hero__intro">
+      <p class="eyebrow">Pour évangélistes et responsables</p>
+      <h1>L’Outil complet <span>de l’évangéliste</span></h1>
+      <span class="divider" aria-hidden="true"><i></i></span>
+      <p class="hero__promise">Une formation pratique et des ressources prêtes à l’emploi pour prêcher l’Évangile avec assurance, gagner des âmes et faire avancer le Royaume de Dieu.</p>
+    </div>
+
+    <figure class="hero__poster">
+      <picture>
+        <source type="image/avif"
+                srcset="images/toolkit-poster-480.avif 480w, images/toolkit-poster-720.avif 720w, images/toolkit-poster-960.avif 960w"
+                sizes="(min-width: 960px) 500px, (min-width: 592px) 560px, calc(100vw - 32px)">
+        <source type="image/webp"
+                srcset="images/toolkit-poster-480.webp 480w, images/toolkit-poster-720.webp 720w, images/toolkit-poster-960.webp 960w"
+                sizes="(min-width: 960px) 500px, (min-width: 592px) 560px, calc(100vw - 32px)">
+        <img src="images/toolkit-poster-720.jpg" width="720" height="720" fetchpriority="high"
+             alt="Affiche de L’Outil complet de l’évangéliste : la couverture du livre à côté des cinq domaines de formation, des Fondements bibliques de l’évangélisation à la Puissance spirituelle et l’évangélisation prophétique">
+      </picture>
+    </figure>
+
+    <div class="hero__cta">
+      <a class="btn" href="https://livresenligne.mychariow.shop/prd_89tf5ibz/checkout" target="_blank" rel="noopener">
+        Obtenir l’outil maintenant
+        <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg>
+        <span class="sr-only">(s’ouvre dans un nouvel onglet)</span>
+      </a>
+      <ul class="facts" role="list">
+        <li><svg class="icon" aria-hidden="true"><use href="#i-zap"></use></svg>Accès immédiat</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-file"></use></svg>Format PDF</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-devices"></use></svg>Téléphone ou ordinateur</li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ 2. PROBLÈME ============ -->
+  <section class="section" id="problem" aria-labelledby="problem-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="problem-title">Vous voulez gagner des âmes. Mais il vous manque souvent les outils.</h2>
+        <p class="lead">Beaucoup d’évangélistes servent avec un cœur brûlant et très peu de soutien. Vous vous reconnaîtrez peut-être dans ces difficultés.</p>
+      </div>
+
+      <ul class="struggles" role="list">
+        <li class="struggle">
+          <span class="struggle__icon" aria-hidden="true"><svg class="icon"><use href="#i-compass"></use></svg></span>
+          <h3>Pas de méthode claire</h3>
+          <p>Vous voulez partager l’Évangile, mais vous ne savez pas toujours comment engager la conversation, quoi dire, ni comment conduire quelqu’un à Christ.</p>
+        </li>
+        <li class="struggle">
+          <span class="struggle__icon" aria-hidden="true"><svg class="icon"><use href="#i-cap"></use></svg></span>
+          <h3>Peu ou pas de formation</h3>
+          <p>Beaucoup d’évangélistes apprennent seuls, sur le terrain. Sans enseignement solide, il est difficile de grandir dans son appel et de former d’autres personnes.</p>
+        </li>
+        <li class="struggle">
+          <span class="struggle__icon" aria-hidden="true"><svg class="icon"><use href="#i-folder"></use></svg></span>
+          <h3>Pas assez de ressources</h3>
+          <p>Tracts, scripts, fiches de suivi, leçons pour les enfants… Vous devez souvent tout créer vous-même, avec peu de temps et peu de moyens.</p>
+        </li>
+        <li class="struggle">
+          <span class="struggle__icon" aria-hidden="true"><svg class="icon"><use href="#i-megaphone"></use></svg></span>
+          <h3>La peur d’organiser une campagne</h3>
+          <p>Une croisade ou une sortie d’évangélisation semble trop lourde à porter&nbsp;: l’équipe, le programme, la logistique, le budget, le suivi. Alors le projet attend toujours.</p>
+        </li>
+      </ul>
+
+      <p class="bridge"><em>Prenez courage.</em> Dieu équipe ceux qu’il appelle, et cet outil a été préparé pour vous aider à servir avec méthode et assurance.</p>
+    </div>
+  </section>
+
+  <!-- ============ 3. SOLUTION ============ -->
+  <section class="section section--alt" id="solution" aria-labelledby="solution-title">
+    <div class="wrap solution__inner">
+      <p class="eyebrow">La solution</p>
+      <h2 id="solution-title">Un pack complet pour faire l’œuvre d’un évangéliste</h2>
+      <span class="divider" aria-hidden="true"><i></i></span>
+      <p class="solution__statement"><strong>L’Outil complet de l’évangéliste</strong> réunit, dans un seul pack numérique, les fondements bibliques, les méthodes pratiques et les outils prêts à l’emploi dont vous avez besoin pour prêcher l’Évangile, gagner des âmes et faire des disciples.</p>
+      <ul class="pack-facts" role="list">
+        <li><strong>5</strong> domaines de formation</li>
+        <li><strong>1</strong> kit bonus pratique</li>
+        <li><strong>PDF</strong> avec accès immédiat</li>
+      </ul>
+      <p class="verse-line">«&nbsp;Fais l’œuvre d’un évangéliste.&nbsp;» <cite>2 Timothée 4:5</cite></p>
+    </div>
+  </section>
+
+  <!-- ============ 4. CONTENU ============ -->
+  <section class="section" id="content" aria-labelledby="content-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="content-title">Ce que contient le pack</h2>
+        <p class="lead">Cinq domaines de formation et un kit bonus pratique, des fondements bibliques jusqu’aux outils que vous utiliserez sur le terrain.</p>
+      </div>
+
+      <ul class="domains" role="list">
+        <li class="domain">
+          <picture class="domain__media">
+            <source type="image/avif" srcset="images/domain-1-biblical-foundations-400.avif 400w, images/domain-1-biblical-foundations-640.avif 640w, images/domain-1-biblical-foundations-800.avif 800w" sizes="(min-width: 1120px) 341px, (min-width: 1024px) calc(33.3vw - 32px), (min-width: 640px) calc(50vw - 34px), calc(100vw - 32px)">
+            <source type="image/webp" srcset="images/domain-1-biblical-foundations-400.webp 400w, images/domain-1-biblical-foundations-640.webp 640w, images/domain-1-biblical-foundations-800.webp 800w" sizes="(min-width: 1120px) 341px, (min-width: 1024px) calc(33.3vw - 32px), (min-width: 640px) calc(50vw - 34px), calc(100vw - 32px)">
+            <img src="images/domain-1-biblical-foundations-640.jpg" width="640" height="640" loading="lazy" decoding="async"
+                 alt="Affiche « Fondements bibliques » : un prédicateur enseigne à partir d’une Bible ouverte à des personnes assises sous un arbre">
+          </picture>
+          <div class="domain__body">
+            <span class="domain__num">01</span>
+            <h3>Fondements bibliques de l’évangélisation</h3>
+            <p>Comprenez ce que l’Écriture enseigne sur l’Évangile, la Grande Commission et l’appel de l’évangéliste, pour que votre ministère repose sur la Parole.</p>
+          </div>
+        </li>
+
+        <li class="domain">
+          <picture class="domain__media">
+            <source type="image/avif" srcset="images/domain-2-practical-methods-400.avif 400w, images/domain-2-practical-methods-640.avif 640w, images/domain-2-practical-methods-800.avif 800w" sizes="(min-width: 1120px) 341px, (min-width: 1024px) calc(33.3vw - 32px), (min-width: 640px) calc(50vw - 34px), calc(100vw - 32px)">
+            <source type="image/webp" srcset="images/domain-2-practical-methods-400.webp 400w, images/domain-2-practical-methods-640.webp 640w, images/domain-2-practical-methods-800.webp 800w" sizes="(min-width: 1120px) 341px, (min-width: 1024px) calc(33.3vw - 32px), (min-width: 640px) calc(50vw - 34px), calc(100vw - 32px)">
+            <img src="images/domain-2-practical-methods-640.jpg" width="640" height="640" loading="lazy" decoding="async"
+                 alt="Affiche « Méthodes et stratégies pratiques » : un formateur explique le plan d’une campagne d’évangélisation sur un tableau blanc">
+          </picture>
+          <div class="domain__body">
+            <span class="domain__num domain__num--navy">02</span>
+            <h3>Méthodes et stratégies pratiques</h3>
+            <p>Apprenez des façons simples et pratiques de partager l’Évangile en tête-à-tête, en public et dans votre quartier, et de conduire des personnes à Christ.</p>
+          </div>
+        </li>
+
+        <li class="domain">
+          <picture class="domain__media">
+            <source type="image/avif" srcset="images/domain-3-campaigns-missions-400.avif 400w, images/domain-3-campaigns-missions-640.avif 640w, images/domain-3-campaigns-missions-800.avif 800w" sizes="(min-width: 1120px) 341px, (min-width: 1024px) calc(33.3vw - 32px), (min-width: 640px) calc(50vw - 34px), calc(100vw - 32px)">
+            <source type="image/webp" srcset="images/domain-3-campaigns-missions-400.webp 400w, images/domain-3-campaigns-missions-640.webp 640w, images/domain-3-campaigns-missions-800.webp 800w" sizes="(min-width: 1120px) 341px, (min-width: 1024px) calc(33.3vw - 32px), (min-width: 640px) calc(50vw - 34px), calc(100vw - 32px)">
+            <img src="images/domain-3-campaigns-missions-640.jpg" width="640" height="640" loading="lazy" decoding="async"
+                 alt="Affiche « Campagnes, missions et discipulat » : un prédicateur s’adresse à une grande foule en plein air au coucher du soleil">
+          </picture>
+          <div class="domain__body">
+            <span class="domain__num">03</span>
+            <h3>Campagnes, missions et discipulat</h3>
+            <p>Préparez et organisez une campagne d’évangélisation étape par étape, de la vision et de l’équipe jusqu’à la logistique et au budget, puis assurez le suivi et le discipulat des nouveaux convertis.</p>
+          </div>
+        </li>
+
+        <li class="domain">
+          <picture class="domain__media">
+            <source type="image/avif" srcset="images/domain-4-children-evangelism-400.avif 400w, images/domain-4-children-evangelism-640.avif 640w, images/domain-4-children-evangelism-800.avif 800w" sizes="(min-width: 1120px) 341px, (min-width: 1024px) calc(33.3vw - 32px), (min-width: 640px) calc(50vw - 34px), calc(100vw - 32px)">
+            <source type="image/webp" srcset="images/domain-4-children-evangelism-400.webp 400w, images/domain-4-children-evangelism-640.webp 640w, images/domain-4-children-evangelism-800.webp 800w" sizes="(min-width: 1120px) 341px, (min-width: 1024px) calc(33.3vw - 32px), (min-width: 640px) calc(50vw - 34px), calc(100vw - 32px)">
+            <img src="images/domain-4-children-evangelism-640.jpg" width="640" height="640" loading="lazy" decoding="async"
+                 alt="Affiche « Évangélisation des enfants » : un enseignant partage une leçon biblique avec des enfants souriants en plein air">
+          </picture>
+          <div class="domain__body">
+            <span class="domain__num domain__num--navy">04</span>
+            <h3>Évangélisation des enfants</h3>
+            <p>Annoncez l’Évangile aux enfants de façon simple et vivante, à leur portée, et aidez-les à grandir dans la foi dès leur plus jeune âge.</p>
+          </div>
+        </li>
+
+        <li class="domain">
+          <picture class="domain__media">
+            <source type="image/avif" srcset="images/domain-5-spiritual-power-400.avif 400w, images/domain-5-spiritual-power-640.avif 640w, images/domain-5-spiritual-power-800.avif 800w" sizes="(min-width: 1120px) 341px, (min-width: 1024px) calc(33.3vw - 32px), (min-width: 640px) calc(50vw - 34px), calc(100vw - 32px)">
+            <source type="image/webp" srcset="images/domain-5-spiritual-power-400.webp 400w, images/domain-5-spiritual-power-640.webp 640w, images/domain-5-spiritual-power-800.webp 800w" sizes="(min-width: 1120px) 341px, (min-width: 1024px) calc(33.3vw - 32px), (min-width: 640px) calc(50vw - 34px), calc(100vw - 32px)">
+            <img src="images/domain-5-spiritual-power-640.jpg" width="640" height="640" loading="lazy" decoding="async"
+                 alt="Affiche « Puissance spirituelle et évangélisation prophétique » : un prédicateur, Bible en main, montre le ciel devant une foule en prière">
+          </picture>
+          <div class="domain__body">
+            <span class="domain__num">05</span>
+            <h3>Puissance spirituelle et évangélisation prophétique</h3>
+            <p>Apprenez à servir dans la puissance du Saint-Esprit, avec la prière et la sensibilité à la direction de Dieu dans chaque sortie d’évangélisation.</p>
+          </div>
+        </li>
+
+        <li class="domain">
+          <div class="bonus-visual" aria-hidden="true">
+            <svg class="icon"><use href="#i-gift"></use></svg>
+            <p class="bonus-visual__title">Évangélisation numérique<br>&amp; kit pratique</p>
+            <ul class="bonus-visual__chips">
+              <li>WhatsApp</li><li>Facebook</li><li>TikTok</li><li>Tracts</li><li>Scripts</li><li>Fiches de suivi</li><li>Modèles d’affiches</li>
+            </ul>
+          </div>
+          <div class="domain__body">
+            <span class="domain__num domain__num--bonus">Bonus</span>
+            <h3>Évangélisation numérique et kit pratique</h3>
+            <p>Touchez les gens en ligne sur WhatsApp, Facebook et TikTok, et gagnez du temps avec des tracts, des scripts, des fiches de suivi et des modèles d’affiches prêts à l’emploi.</p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="cta-block after-content">
+        <p class="cta-block__title">Les cinq domaines et le kit bonus, dans un seul pack.</p>
+        <a class="btn" href="https://livresenligne.mychariow.shop/prd_89tf5ibz/checkout" target="_blank" rel="noopener">
+          Obtenir l’outil maintenant
+          <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg>
+          <span class="sr-only">(s’ouvre dans un nouvel onglet)</span>
+        </a>
+        <ul class="facts" role="list">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-zap"></use></svg>Accès immédiat</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-file"></use></svg>Format PDF</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-devices"></use></svg>Téléphone ou ordinateur</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5. RÉSULTATS ============ -->
+  <section class="section section--alt" id="results" aria-labelledby="results-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="results-title">Ce que vous pourrez faire</h2>
+        <p class="lead">Après avoir parcouru l’outil, vous pourrez servir avec clarté et assurance.</p>
+      </div>
+
+      <ul class="results" role="list">
+        <li class="result">
+          <span class="result__check" aria-hidden="true"><svg class="icon"><use href="#i-check"></use></svg></span>
+          <h3>Partager l’Évangile personnellement</h3>
+          <p>Engager la conversation naturellement, présenter le message clairement et conduire quelqu’un à Christ.</p>
+        </li>
+        <li class="result">
+          <span class="result__check" aria-hidden="true"><svg class="icon"><use href="#i-check"></use></svg></span>
+          <h3>Organiser une campagne d’évangélisation</h3>
+          <p>Planifier la vision, l’équipe, le programme, la logistique et le budget, étape par étape.</p>
+        </li>
+        <li class="result">
+          <span class="result__check" aria-hidden="true"><svg class="icon"><use href="#i-check"></use></svg></span>
+          <h3>Faire connaître Jésus aux enfants</h3>
+          <p>Annoncer l’Évangile aux enfants de façon simple et vivante, adaptée à leur âge.</p>
+        </li>
+        <li class="result">
+          <span class="result__check" aria-hidden="true"><svg class="icon"><use href="#i-check"></use></svg></span>
+          <h3>Suivre les nouveaux convertis</h3>
+          <p>Aider les nouveaux croyants à grandir, à tenir ferme et à devenir des disciples dans l’église locale.</p>
+        </li>
+        <li class="result">
+          <span class="result__check" aria-hidden="true"><svg class="icon"><use href="#i-check"></use></svg></span>
+          <h3>Utiliser le numérique pour l’Évangile</h3>
+          <p>Toucher les gens sur WhatsApp, Facebook et TikTok avec des scripts et des modèles prêts à l’emploi.</p>
+        </li>
+        <li class="result">
+          <span class="result__check" aria-hidden="true"><svg class="icon"><use href="#i-check"></use></svg></span>
+          <h3>Servir dans la puissance de l’Esprit</h3>
+          <p>Dépendre de la prière et du Saint-Esprit, avec un ministère enraciné dans la Parole de Dieu.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ 6. POUR QUI ============ -->
+  <section class="section" id="for-who" aria-labelledby="for-who-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="for-who-title">À qui s’adresse cet outil&nbsp;?</h2>
+        <p class="lead">À tous ceux que Dieu a appelés à gagner des âmes, que vous débutiez ou que vous serviez depuis des années.</p>
+      </div>
+
+      <ul class="audience" role="list">
+        <li class="who">
+          <span class="who__icon" aria-hidden="true"><svg class="icon"><use href="#i-mic"></use></svg></span>
+          <h3>Évangélistes</h3>
+          <p>Qui veulent une méthode claire et des outils pratiques pour le terrain.</p>
+        </li>
+        <li class="who">
+          <span class="who__icon" aria-hidden="true"><svg class="icon"><use href="#i-church"></use></svg></span>
+          <h3>Pasteurs</h3>
+          <p>Qui veulent équiper leur église pour atteindre leur ville ou leur quartier.</p>
+        </li>
+        <li class="who">
+          <span class="who__icon" aria-hidden="true"><svg class="icon"><use href="#i-users"></use></svg></span>
+          <h3>Responsables de jeunesse</h3>
+          <p>Qui veulent mobiliser les jeunes pour partager leur foi.</p>
+        </li>
+        <li class="who">
+          <span class="who__icon" aria-hidden="true"><svg class="icon"><use href="#i-book"></use></svg></span>
+          <h3>Moniteurs d’école du dimanche</h3>
+          <p>Qui enseignent les enfants chaque semaine et veulent les conduire à Jésus.</p>
+        </li>
+        <li class="who">
+          <span class="who__icon" aria-hidden="true"><svg class="icon"><use href="#i-handshake"></use></svg></span>
+          <h3>Équipes d’évangélisation</h3>
+          <p>Qui organisent ensemble campagnes, missions et suivi.</p>
+        </li>
+        <li class="who">
+          <span class="who__icon" aria-hidden="true"><svg class="icon"><use href="#i-cross"></use></svg></span>
+          <h3>Chrétiens engagés</h3>
+          <p>Qui veulent partager l’Évangile avec plus d’assurance.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ 7. OFFRE ============ -->
+  <section class="section band offer" id="offer" aria-labelledby="offer-title">
+    <div class="wrap">
+      <div class="offer-card">
+        <p class="eyebrow">L’Outil complet de l’évangéliste</p>
+        <h2 id="offer-title">Obtenez l’outil complet dès aujourd’hui</h2>
+
+        <ul class="offer-list" role="list">
+          <li><span class="result__check" aria-hidden="true"><svg class="icon"><use href="#i-check"></use></svg></span><span><strong>5 domaines de formation</strong>, des fondements bibliques à la puissance spirituelle</span></li>
+          <li><span class="result__check" aria-hidden="true"><svg class="icon"><use href="#i-check"></use></svg></span><span><strong>Bonus&nbsp;:</strong> évangélisation numérique et kit pratique (tracts, scripts, fiches de suivi, modèles d’affiches)</span></li>
+          <li><span class="result__check" aria-hidden="true"><svg class="icon"><use href="#i-check"></use></svg></span><span><strong>Accès immédiat</strong> juste après votre paiement</span></li>
+          <li><span class="result__check" aria-hidden="true"><svg class="icon"><use href="#i-check"></use></svg></span><span><strong>Format PDF</strong>, téléchargeable sur votre téléphone ou votre ordinateur</span></li>
+          <li><span class="result__check" aria-hidden="true"><svg class="icon"><use href="#i-check"></use></svg></span><span><strong>Lecture à tout moment</strong>, même sans internet, une fois téléchargé</span></li>
+        </ul>
+
+        <!-- PRIX (facultatif) : pour afficher votre prix sur la page, écrivez-le ci-dessous et supprimez le mot hidden.
+             Exemple : <p class="offer-price">27 000 FC</p> -->
+        <p class="offer-price" hidden>Votre prix</p>
+
+        <a class="btn" href="https://livresenligne.mychariow.shop/prd_89tf5ibz/checkout" target="_blank" rel="noopener">
+          Obtenir l’outil maintenant
+          <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg>
+          <span class="sr-only">(s’ouvre dans un nouvel onglet)</span>
+        </a>
+        <p class="offer-note">Vous verrez le prix et les moyens de paiement disponibles sur la page de paiement sécurisée.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 8. FAQ ============ -->
+  <section class="section section--alt" id="faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="faq-title">Questions fréquentes</h2>
+      </div>
+
+      <div class="faq">
+        <details open>
+          <summary>Comment vais-je recevoir le pack&nbsp;?<span class="faq__toggle" aria-hidden="true"><svg class="icon"><use href="#i-plus"></use></svg></span></summary>
+          <div class="faq__answer">
+            <p>Dès que votre paiement est confirmé, vous avez immédiatement accès à votre achat. Vous pouvez alors télécharger les fichiers PDF sur votre téléphone ou votre ordinateur et les garder.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Comment payer&nbsp;?<span class="faq__toggle" aria-hidden="true"><svg class="icon"><use href="#i-plus"></use></svg></span></summary>
+          <div class="faq__answer">
+            <p>Appuyez sur «&nbsp;Obtenir l’outil maintenant&nbsp;». Vous arriverez sur une page de paiement sécurisée où vous choisirez un moyen de paiement, par exemple Mobile Money ou carte bancaire, selon votre pays. Confirmez ensuite votre paiement.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Sur quels appareils puis-je le lire&nbsp;?<span class="faq__toggle" aria-hidden="true"><svg class="icon"><use href="#i-plus"></use></svg></span></summary>
+          <div class="faq__answer">
+            <p>Sur tout smartphone (Android ou iPhone), toute tablette ou tout ordinateur capable d’ouvrir des fichiers PDF. Une fois les fichiers téléchargés, vous pouvez les lire même sans connexion internet.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Est-ce adapté aux débutants&nbsp;?<span class="faq__toggle" aria-hidden="true"><svg class="icon"><use href="#i-plus"></use></svg></span></summary>
+          <div class="faq__answer">
+            <p>Oui. L’outil commence par les fondements bibliques, puis avance étape par étape vers les méthodes et les outils pratiques. Les débutants y trouveront un chemin clair, et les serviteurs expérimentés, des ressources pour aller plus loin et former d’autres personnes.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Comment contacter le service client&nbsp;?<span class="faq__toggle" aria-hidden="true"><svg class="icon"><use href="#i-plus"></use></svg></span></summary>
+          <div class="faq__answer">
+            <p>Écrivez-nous sur WhatsApp au <a href="https://wa.me/243823226790?text=Bonjour%2C%20je%20souhaite%20avoir%20des%20informations%20sur%20L%27Outil%20complet%20de%20l%27%C3%A9vang%C3%A9liste" target="_blank" rel="noopener">+243 823 226 790<span class="sr-only"> (s’ouvre dans un nouvel onglet)</span></a>. Nous serons heureux de vous aider.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 9. APPEL FINAL ============ -->
+  <section class="section band final" id="get-started" aria-labelledby="final-title">
+    <div class="wrap final__inner">
+      <figure class="verse">
+        <blockquote><p>«&nbsp;La moisson est grande, mais il y a peu d’ouvriers.&nbsp;»</p></blockquote>
+        <figcaption>Matthieu 9:37</figcaption>
+      </figure>
+      <span class="divider" aria-hidden="true"><i></i></span>
+      <h2 id="final-title">La moisson est prête. Équipez-vous dès aujourd’hui.</h2>
+      <p class="lead">Recevez la méthode, la formation et les outils dont vous avez besoin, et allez gagner des âmes pour Christ avec assurance.</p>
+      <div class="cta-block">
+        <a class="btn" href="https://livresenligne.mychariow.shop/prd_89tf5ibz/checkout" target="_blank" rel="noopener">
+          Obtenir l’outil maintenant
+          <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg>
+          <span class="sr-only">(s’ouvre dans un nouvel onglet)</span>
+        </a>
+        <ul class="facts" role="list">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-zap"></use></svg>Accès immédiat</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-file"></use></svg>Format PDF</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-devices"></use></svg>Téléphone ou ordinateur</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ 10. PIED DE PAGE ============ -->
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <p class="footer__brand">L’Outil complet de l’évangéliste</p>
+    <p>Formation pratique et ressources essentielles pour prêcher l’Évangile, gagner des âmes et faire avancer le Royaume de Dieu.</p>
+    <nav class="footer__links" aria-label="Pied de page">
+      <a href="https://livresenligne.mychariow.shop/prd_89tf5ibz/checkout" target="_blank" rel="noopener">Obtenir l’outil<span class="sr-only"> (s’ouvre dans un nouvel onglet)</span></a>
+      <a href="https://wa.me/243823226790?text=Bonjour%2C%20je%20souhaite%20avoir%20des%20informations%20sur%20L%27Outil%20complet%20de%20l%27%C3%A9vang%C3%A9liste" target="_blank" rel="noopener">Contact WhatsApp<span class="sr-only"> (s’ouvre dans un nouvel onglet)</span></a>
+      <a href="#top">Retour en haut</a>
+    </nav>
+    <p class="footer__site">Site&nbsp;: <a href="https://bookline.digital" target="_blank" rel="noopener">Bookline<span class="sr-only"> (s’ouvre dans un nouvel onglet)</span></a></p>
+    <p>© 2026 L’Outil complet de l’évangéliste. Tous droits réservés.</p>
+  </div>
+</footer>
+
+<!-- Icons: Lucide (ISC licence) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></symbol>
+  <symbol id="i-zap" viewBox="0 0 24 24"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></symbol>
+  <symbol id="i-devices" viewBox="0 0 24 24"><path d="M18 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h8"/><path d="M10 19v-3.96 3.15"/><path d="M7 19h5"/><rect width="6" height="10" x="16" y="12" rx="2"/></symbol>
+  <symbol id="i-compass" viewBox="0 0 24 24"><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"/><circle cx="12" cy="12" r="10"/></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol>
+  <symbol id="i-folder" viewBox="0 0 24 24"><path d="m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2"/></symbol>
+  <symbol id="i-megaphone" viewBox="0 0 24 24"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></symbol>
+  <symbol id="i-gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"/></symbol>
+  <symbol id="i-mic" viewBox="0 0 24 24"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/></symbol>
+  <symbol id="i-church" viewBox="0 0 24 24"><path d="M10 9h4"/><path d="M12 7v5"/><path d="M14 22v-4a2 2 0 0 0-4 0v4"/><path d="M18 22V5.618a1 1 0 0 0-.553-.894l-4.553-2.277a2 2 0 0 0-1.788 0L6.553 4.724A1 1 0 0 0 6 5.618V22"/><path d="m18 7 3.447 1.724a1 1 0 0 1 .553.894V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9.618a1 1 0 0 1 .553-.894L6 7"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></symbol>
+  <symbol id="i-handshake" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66"/><path d="m18 15-2-2"/><path d="m15 18-2-2"/></symbol>
+  <symbol id="i-cross" viewBox="0 0 24 24"><path d="M12 2v20"/><path d="M6.5 8h11"/></symbol>
+</svg>
+
+</body>
+</html>
