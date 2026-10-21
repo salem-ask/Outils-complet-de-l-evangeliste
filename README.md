@@ -17,7 +17,7 @@ La version anglaise se trouve dans le dépôt [The-evangelist-complete-toolkit-]
 ## Liens utilisés
 
 - **Paiement :** `https://livresenligne.mychariow.shop/prd_89tf5ibz/checkout` (produit « Outils complets de l’évangéliste » de la boutique Library Online). Il fonctionnera une fois le produit publié sur Chariow.
-- **WhatsApp :** `https://wa.me/243823226790?...` avec un message prérempli en français, dans la FAQ et le pied de page.
+- **WhatsApp :** un lien `wa.me` avec un message prérempli en français, utilisé par le bouton de la FAQ et le pied de page. Le numéro n’est jamais affiché sur la page.
 - **Site :** `https://bookline.digital`, dans le pied de page.
 
 ## À modifier dans `index.html`
